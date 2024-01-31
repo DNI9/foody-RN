@@ -3,6 +3,7 @@ import { Ionicons } from "@expo/vector-icons";
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import SearchBar from "./SearchBar";
 
 export default function CustomHeader() {
   return (
@@ -30,6 +31,8 @@ export default function CustomHeader() {
           <Ionicons name="person-outline" size={20} color={colors.primary} />
         </TouchableOpacity>
       </View>
+
+      <SearchBar />
     </SafeAreaView>
   );
 }
